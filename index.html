@@ -119,24 +119,9 @@ body
         -webkit-box-shadow: 3px 3px 6px #888;
         box-shadow: 3px 3px 6px #888;
     }
-.site-avatar {
-  float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
-}
-@media screen and (max-width: 640px) {
-  .site-avatar {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-}
-.site-avatar img {
-  border-radius: 5px;
-}
-</style>
 
+</style>
+<link rel="stylesheet" type="text/css" href="src/style.css" />
 </head>
 
 
@@ -146,18 +131,24 @@ body
 
 	<table>
 	<tbody><tr>
-	<td> 
-		<a href="/" class="site-avatar"><img id="myPicture" src="./src/p.jpg" style="float:left; padding-right:10px" height="200px">
-		</a>
-	</td>
-	<td>
-	<div id="DocInfo">
-		<h2>Sk. Arif Ahmed, Ph.D</h2>
-		<h3>Postdoc, Department of Physics and Technology, University of Tromsø, Norway<br/>
-		Former Assistant Professor at Haldia Institute of Technology, India<br/>
-		Email: <a href="mailto:skarifahmed@gmail.com">skarifahmed [at] gmail [dot] com</ h3>
-        <h3><div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0003-0706-2565" href="https://orcid.org/0000-0003-0706-2565" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">https://orcid.org/0000-0003-0706-2565</a></div>
-	</td>
+		 <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="src/p.jpg" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Santiago Benitez-Vieyra</a></h1>
+            <p class="site-description">(R)Evolutionary Ecology and Statistics</p>
+          </div>
+
+          <nav>
+            <a href="/">Blog</a>
+            <a href="/about">About</a>
+            <a href="/teaching">Teaching</a>
+          </nav>
+        </header>
+      </div>
+    </div>
 	</tr>
 	</tbody></table>
 
