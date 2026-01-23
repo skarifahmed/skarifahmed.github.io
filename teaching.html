@@ -211,6 +211,115 @@ button:visited {
 
 .style1 {color: #000000}
 </style>
+ <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --text-muted: #636e72;
+            --bg-color: #f8f9fa;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: #2d3436;
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            border-bottom: 2px solid #dfe6e9;
+            padding-bottom: 10px;
+            margin-top: 40px;
+            color: var(--primary-color);
+            font-size: 1.5rem;
+        }
+
+        .course-card {
+            background: #fff;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            padding: 20px;
+            border: 1px solid #e1e4e8;
+            display: flex;
+            gap: 20px;
+            transition: transform 0.2s;
+        }
+
+        .course-card:hover {
+            border-color: var(--accent-color);
+        }
+
+        .year-side {
+            min-width: 100px;
+            font-weight: 700;
+            color: var(--accent-color);
+            font-size: 0.95rem;
+        }
+
+        .details {
+            flex-grow: 1;
+        }
+
+        .course-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 0 0 5px 0;
+            color: #111;
+        }
+
+        .course-meta {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+
+        .tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            font-size: 0.75rem;
+            background: #f0f2f5;
+            padding: 2px 8px;
+            border-radius: 4px;
+            color: #555;
+            border: 1px solid #ddd;
+        }
+
+        .link-btn {
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 0.85rem;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .link-btn:hover {
+            text-decoration: underline;
+        }
+
+        .ects {
+            background: #e1f5fe;
+            color: #01579b;
+            border: none;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .course-card { flex-direction: column; gap: 5px; }
+            .year-side { min-width: auto; }
+        }
+    </style>
 
 </head>
 
@@ -259,218 +368,105 @@ button:visited {
 	</tbody></table>
 <br/>
     
-    <h2><strong>TEACHING ACTIVITIES</strong></h2>
-<p><span class="style1"><strong>Classroom teaching experience:</strong> I have experience in classroom teaching at all levels: course  coordinator, course designer, lecturer, tutorial conductor, and lab session  instructor. Most of my teaching experience was gathered at the Haldia Institute of  Technology (HIT), and XIM University, India. Additionally, I have designed and conducted courses  for industrial persons and faculty members. Below, I present details of my  teaching experience.</span> </p>
-<table border="1" align="center" cellpadding="0" cellspacing="0">
-  <tr>
-    <td  valign="top" bgcolor="#CCCCCC"><br />
-        <strong>Course    details</strong> </td>
-    <td width="328" valign="top" bgcolor="#CCCCCC" class="style1"><p class="style1"><strong>Responsibilities    (&#9679;), additional remarks (&#9675;), and feedback (&#9788;)</strong></p></td>
-  </tr>
+ <div class="container">
+    <h1>Teaching</h1>
 
- <tr>
-    <td  valign="top" class="style1"><p><span class="style1"><strong>Course:</strong> Computer Vision and Image Processing (UG, PG, XIM University, India)<br />
-            <strong>Years involved:</strong> 2021-2024<br />
-            <strong>Role:</strong> Course Design, Lecture, Practical</span></p></td>
-    <td width="328" valign="top" class="style1"><ul>
-      <li>Design of curriculum.</li>
-      <li>Classroom Lecture.</li>
-      <li>Practical Session.</li>
-      <li>Supervision.</li>
-      <li>Evaluate.</li>
-    </ul></td>
-  </tr>
- 
+    <h2>Research Focused Special Courses</h2>
+    
+    <div class="course-card">
+        <div class="year-side">2024 – 2025</div>
+        <div class="details">
+            <p class="course-title">INF-8605: Interpretability in Deep Learning</p>
+            <div class="course-meta">
+                Organized by DLN/HK-dir, UiT The Arctic University of Norway & IIT-ISM Dhanbad
+            </div>
+            <div class="tags">
+                <span class="tag ects">5 ECTS</span>
+                <span class="tag">Course Design</span>
+                <span class="tag">Lecture</span>
+                <span class="tag">Practical</span>
+            </div>
+            <a href="https://uit.no/utdanning/emner/emne/874075/inf-8605" class="link-btn">Course Link →</a>
+        </div>
+    </div>
 
- <tr>
-    <td  valign="top" class="style1"><p><span class="style1"><strong>Course:</strong> Deep Learning (UG, PG, XIM University, India)<br />
-            <strong>Years involved:</strong> 2021-2024<br />
-            <strong>Role:</strong> Course Design, Lecture, Practical</span></p></td>
-    <td width="328" valign="top" class="style1"><ul>
-      <li>Design of curriculum.</li>
-      <li>Classroom Lecture.</li>
-      <li>Practical Session.</li>
-      <li>Supervision.</li>
-      <li>Evaluate.</li>
-    </ul></td>
-  </tr>
+    <div class="course-card">
+        <div class="year-side">2025</div>
+        <div class="details">
+            <p class="course-title">INF-8606: Generative AI for Health and Life Sciences</p>
+            <div class="course-meta">
+                Organized by DLN/HK-dir, UiT The Arctic University of Norway & IIT-ISM Dhanbad
+            </div>
+            <div class="tags">
+                <span class="tag ects">5 ECTS</span>
+                <span class="tag">Course Design</span>
+                <span class="tag">Lecture</span>
+                <span class="tag">Practical</span>
+            </div>
+            <a href="https://uit.no/utdanning/emner/emne/874076/inf-8606" class="link-btn">Course Link →</a>
+        </div>
+    </div>
 
-	 <tr>
-    <td  valign="top" class="style1"><p><span class="style1"><strong>Course:</strong> Database Management System (UG, XIM University, India)<br />
-            <strong>Years involved:</strong> 2021-2024<br />
-            <strong>Role:</strong> Course Design, Lecture, Practical</span></p></td>
-    <td width="328" valign="top" class="style1"><ul>
-      <li>Design of curriculum.</li>
-      <li>Classroom Lecture.</li>
-      <li>Practical Session.</li>
-      <li>Supervision.</li>
-      <li>Evaluate.</li>
-    </ul></td>
-  </tr>
+    <div class="course-card">
+        <div class="year-side">2025</div>
+        <div class="details">
+            <p class="course-title">INF-8603: Gender, Diversity, and Fairness Policy in AI</p>
+            <div class="course-meta">
+                Organized by DLN/HK-dir, UiT The Arctic University of Norway & IIT-ISM Dhanbad
+            </div>
+            <div class="tags">
+                <span class="tag ects">3 ECTS</span>
+                <span class="tag">Course Design</span>
+                <span class="tag">Lecture</span>
+                <span class="tag">Practical</span>
+            </div>
+            <a href="https://uit.no/utdanning/emner/emne/874074/inf-8603?ar=2025&semester=H" class="link-btn">Course Link →</a>
+        </div>
+    </div>
 
-<tr>
-    <td  valign="top" class="style1"><p><span class="style1"><strong>Course:</strong>Computer Organization and Architecture (UG, XIM University, India)<br />
-            <strong>Years involved:</strong> 2021-2024<br />
-            <strong>Role:</strong> Course Design, Lecture, Practical</span></p></td>
-    <td width="328" valign="top" class="style1"><ul>
-      <li>Design of curriculum.</li>
-      <li>Classroom Lecture.</li>
-      <li>Practical Session.</li>
-      <li>Supervision.</li>
-      <li>Evaluate.</li>
-    </ul></td>
-  </tr>
+    <h2>Graduate and Postgraduate Courses</h2>
 
-	
-  <tr>
-    <td  valign="top" class="style1"><p><span class="style1"><strong>Course</strong>: Special Curriculum on Imaging artefacts in nanoscopy &nbsp;(Special course for interns, UiT, Norway)<br />
-            <strong>Years involved:</strong> 2020<br />
-            <strong>Role</strong>: Supervision and curriculum designer</span></p></td>
-    <td width="328" valign="top" class="style1"><ul>
-      <li>Design of curriculum.</li>
-      <li>Supervision.</li>
-      <li>Evaluate project submissions.</li>
-      <li>Outcome of the curriculum is a form of article    submitted in a reputed journal </li>
-    </ul></td>
-  </tr>
-  <tr>
-    <td  valign="top" class="style1"><p><span class="style1"><strong>Course</strong>: Special Curriculum on Temporal information in nanoscopy &nbsp;(Special course for interns, UiT, Norway)<br />
-            <strong>Years involved:</strong> 2020<br />
-            <strong>Role</strong>: Supervision and curriculum designer</span></p></td>
-    <td width="328" valign="top" class="style1"><ul>
-      <li>Design of curriculum.</li>
-      <li>Supervision.</li>
-      <li>Evaluate project submissions.</li>
-      <li>Outcome of the curriculum is a form of article    submitted in a reputed journal</li>
-    </ul></td>
-  </tr>
-  <tr>
-    <td  valign="top" class="style1"><p><span class="style1"><strong>Course</strong>: Machine Learning (Special course for industrial persons, Hands-on    systems)<br />
-            <strong>Years involved:</strong> 2018-2019<br />
-            <strong>Role</strong>: Lecturer and curriculum designer</span></p></td>
-    <td width="328" valign="top" class="style1"><ul>
-      <li>Design the curriculum.</li>
-      <li>Design of projects and lab experiments.</li>
-      <li>Conduct lectures, tutorials, and labs.</li>
-      <li>Evaluate project submissions.</li>
-      <li>Developed AI-based solution in their respective    field such as production, automation, data analysis, etc. </li>
-    </ul>
-        <p class="style1">&#9788; Excellent student feedback</p></td>
-  </tr>
-  <tr>
-    <td  valign="top" class="style1"><p><span class="style1"><strong>Course</strong>: Basic Computation &amp; Principles of    Computer Programming (CS201,CS291)&nbsp;    (undergraduate module, HIT)<br />
-            <strong>Years involved</strong>: 2009-2018<br />
-            <strong>Role</strong>: Lecturer and lab instructor <br />
-            <strong>Details</strong>: ~60 students per semester (conducted    once a year), multi-disciplinary students</span></p></td>
-    <td width="328" valign="top" class="style1"><ul>
-      <li>Design the curriculum.</li>
-      <li>Design of projects and lab experiments.</li>
-      <li>Conduct lectures, tutorials, and labs.</li>
-      <li>Conducting tests and evaluate.</li>
-    </ul>
-        <p>&nbsp;</p>
-      <p class="style1">&#9788;&#9788; Excellent student feedback</p></td>
-  </tr>
-  <tr>
-    <td  valign="top" class="style1"><p><strong>Course</strong>: Computer Organisation &amp;    Architecture (MCA101,MCA191) (masters module, HIT)<br />
-            <strong>Years involved</strong>: 2009-2018<br />
-            <strong>Role</strong>: Lecturer and lab instructor<br />
-            <strong>Details</strong>: ~50 students    per semester (conducted once a year)</p></td>
-    <td width="328" valign="top" class="style1"><ul>
-      <li>Design the curriculum.</li>
-      <li>Design of projects and lab experiments.</li>
-      <li>Conduct lectures, tutorials, and labs.</li>
-      <li>Conducting tests and evaluate.</li>
-    </ul>
-        <p>&nbsp;</p>
-      <p>&#9788; Encouraging student feedback</p></td>
-  </tr>
-  <tr>
-    <td  valign="top" class="style1"><p><strong>Course: </strong>Minor Project and Seminar (MCA591)    (masters module, HIT)<br />
-            <strong>Years involved</strong>: 2009-2018<br />
-            <strong>Role</strong>: Designer and coordinator<br />
-            <strong>Details</strong>: ~50 students/semester (conducted once    a year)</p></td>
-    <td width="328" valign="top" class="style1"><ul>
-      <li>Design individual project problems</li>
-      <li>Supervise and advise students for the projects</li>
-      <li>Assess the project submissions</li>
-      <li>Assessed publication potential of project outcomes</li>
-      <li>Assisted students seeking publication of project    results</li>
-    </ul>
-        <p>&nbsp;</p>
-      <p>&#9788;&#9788; Excellent student feedback</p></td>
-  </tr>
-  <tr>
-    <td  valign="top" class="style1"><p><strong>Course</strong>: Database Management System&nbsp; (MCA204, MCA294) (masters module, HIT)<br />
-            <strong>Years involved</strong>: 2009-2018<br />
-            <strong>Role</strong>: Lecturer and lab instructor<br />
-            <strong>Details</strong>: ~50 students per semester (conducted    once a year)</p></td>
-    <td width="328" valign="top" class="style1"><ul>
-      <li>Design and co-ordinate course</li>
-      <li>Design online evaluation</li>
-      <li>~40 students and young entrepreneurs participated in    this course</li>
-    </ul>
-        <p>&nbsp;</p>
-      <p>&#9788;&#9788; Excellent student feedback</p></td>
-  </tr>
-  <tr>
-    <td  valign="top" class="style1"><p><strong>Course: </strong>Machine Learning and&nbsp; Applications (Design for Faculty    Development program at HIT)<br />
-            <strong>Year: </strong>2018-19<br />
-            <strong>Role: </strong>Designer, Coordinator, Instructor<br />
-            <strong>Details: </strong>For the faculty members and researchers</p></td>
-    <td width="328" valign="top" class="style1"><ul>
-      <li>Design the curriculum.</li>
-      <li>Design of projects and lab experiments.</li>
-      <li>Conduct lectures, tutorials, and labs.</li>
-      <li>Evaluate project submissions.</li>
-      <li>Developed AI-based solution in their respective    research field such as electrical, image procession, NLP, etc.</li>
-    </ul>
-        <p>&#9788;&#9788; Excellent feedback</p></td>
-  </tr>
-  <tr>
-    <td  valign="top" class="style1"><p><strong>Course: </strong>Programming using C, C++, Computer    Network, Web Technology<br />
-            <strong>Year: </strong>2010-18<br />
-            <strong>Role: </strong>Coordinator, Instructor<br />
-            <strong>Details: </strong>Guest lecture and coordinator in IGNOU,    2-10 students/semester</p></td>
-    <td width="328" valign="top" class="style1"><ul>
-      <li>Design the curriculum.</li>
-      <li>Design of projects and lab experiments.</li>
-      <li>Conduct lectures, tutorials, and labs.</li>
-      <li>Conducting tests and evaluate.</li>
-    </ul>
-        <p>&nbsp;</p></td>
-  </tr>
-  <tr>
-    <td  valign="top" class="style1"><p><strong>Course: </strong>C, Data Structure, Computer Network,    etc.<br />
-            <strong>Year: </strong>2012-16<br />
-            <strong>Role: </strong>Coordinator, Instructor<br />
-            <strong>Details: </strong>Guest lecture, designer, and coordinator    in Infosys Campus Connect </p></td>
-    <td width="328" valign="top" class="style1"><ul>
-      <li>Conduct lectures, tutorials, and labs.</li>
-      <li>Conducting tests and evaluate.</li>
-    </ul>
-        <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&#9788;&#9788;    Excellent student feedback</p></td>
-  </tr>
-</table>
-<p class="style1"><strong>Note:</strong> During my 10  years of employment at HIT, a few courses like Operating System, Algorithms,  Programming with C++, Object Oriented Programming using JAVA, Computer Networks  and Internetworking, Advance Web Programming, etc. undertaken a few times.<br />
-    <strong>Formal education in pedagogy:</strong> I have undertaken the following faculty development courses on  pedagogy, as a part of teaching faculty development program at HIT:</p>
-<ul class="style1">
-  <li>Fundamental of classroom teaching, 11th  February , 2011 (3 days)</li>
-  <li>Objective based course design, 21th May ,  2013 (2 days)</li>
-  <li>Motivating students toward innovation,  17th March , 2015 (1 days)</li>
-  <li>FDP on recent research trends, 2nd  December, 2016 (7 days)</li>
-  <li>Global Initiative of Academic Network  (GIAN), 28th September, 2017 (7 days)<br>
-      <br>
-        <br>
-      <strong>SUPERVISION/MENTORING OF GRADUATE AND UNDERGRADUATE  STUDENTS/ PhD </strong></li>
-</ul>
-	  <p class="style1">2018 &ndash; 2024 &nbsp;&nbsp;&nbsp;&nbsp; 1 Ph.D (Thesis Submitted), 2 Ph.D students ongoing (With collaboration), 1 Master Thesis and 3
-Undergraduate Students (UiT), 4 Master Thesis and 10 Graduate Thesis in XIM University.<br />
-<p class="style1">2009 &ndash; 2018 &nbsp;&nbsp;&nbsp;&nbsp; 4  to 6 students (UG and PG) in each year. (HIT, India)<br />
-  2010 &ndash; 2018&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2  Students each year for Final Project (IGNOU)<br />
-  2018 &ndash; 2020&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4  Ph.D students ongoing (Formal guidance with collaborators), 1 master thesis and  3 undergraduate students (UiT, Norway)</p>
-  </div>
+    <div class="course-card">
+        <div class="year-side">2022 – 2024</div>
+        <div class="details">
+            <p class="course-title">Lecturer in CV, DL, DBMS, and Architecture</p>
+            <div class="course-meta">XIM University, India</div>
+            <div class="tags">
+                <span class="tag">Course Design</span>
+                <span class="tag">Lecture</span>
+                <span class="tag">Practical</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="course-card">
+        <div class="year-side">2018</div>
+        <div class="details">
+            <p class="course-title">Instructor in Machine Learning</p>
+            <div class="course-meta">Lecture series and hands-on sessions for data analysts</div>
+            <div class="tags">
+                <span class="tag">Course Design</span>
+                <span class="tag">Lecture</span>
+                <span class="tag">Practical</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="course-card">
+        <div class="year-side">2009 – 2018</div>
+        <div class="details">
+            <p class="course-title">Lecturer in C, Data Structures, DBMS, and Architecture</p>
+            <div class="course-meta">Haldia Institute of Technology, India</div>
+            <div class="tags">
+                <span class="tag">Course Design</span>
+                <span class="tag">Lecture</span>
+                <span class="tag">Practical</span>
+            </div>
+        </div>
+    </div>
+
 </div>
+
+
 </body></html>
+
